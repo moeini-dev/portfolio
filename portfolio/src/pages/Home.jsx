@@ -1,6 +1,9 @@
 import './home.css';
 import astronaut from './../assets/png/image-from-rawpixel-id-12158813-png.webp';
-import arrowdown from './../assets/arrow-down.svg';
+import statue from './../assets/png/alex-shuper-zoiROwz_2IU-unsplash.webp';
+import twisted_shape from './../assets/png/twisted_shape.png';
+import hologram_hand from './../assets/png/simon-lee-ynmPY1MLwMs-unsplash-removebg-preview.webp'
+import polished_obj from './../assets/png/rohit-choudhari-S6KP_UX2O9s-unsplash-removebg-preview.webp' 
 
 function Home () {
   return (
@@ -27,6 +30,64 @@ function Home () {
           </svg>
         </div>
       </div>
+      <section className="skills-container">
+          <div id="skill-software" className="skill-wrapper">
+            <img src={statue} alt="a silver-golden statue of Michelangelo " className="skill-pic" id="michel"/>
+            <div className="skill-context">
+              <div className="skill-title">Software<br/>Engineering</div>
+              <ul className="skill-text">
+                <li>Users & System Requirements Analysis</li>
+                <li>Database Architecture Design</li>
+                <li>Scrum</li>
+              </ul>
+            </div>
+          </div>
+          <div id="skill-backend" className="skill-wrapper right">
+            <img src={twisted_shape} alt="a silver-golden statue of Michelangelo " className="skill-pic" id="twisted"/>
+            <div className="skill-context right">
+              <div className="skill-title">Back-End<br/>Development</div>
+              <div className="skill-text two-columns">
+                <ul className="skill-text-left">
+                  <li>Python</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>Sequelize ORM</li>
+                  <li>MySQL</li>
+                </ul>
+                <ul className="skill-text-right">
+                  <li>RESTful API</li>
+                  <li>Postman</li>
+                  <li>Docker</li>
+                  <li>Git/GitHub</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="skill-frontend" className="skill-wrapper">
+            <img src={hologram_hand} alt="a dripping holographic hand with a metal and color paint material" className="skill-pic" id="dripping-hand"/>
+            <div className="skill-context">
+              <div className="skill-title">Front-End<br/>Develpment</div>
+              <ul className="skill-text">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+          <div id="skill-design" className="skill-wrapper right">
+            <img src={polished_obj} alt="Two smooth polished shapes in front of each other" className="skill-pic" id="polished_obj"/>
+            <div className="skill-context right">
+              <div className="skill-title">Design</div>
+              <ul className="skill-text">
+                <li>Web And Mobile UI</li>
+                <li>Figma</li>
+                <li>InVision</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+          </div>
+      </section>
 		</>
   );
 }
