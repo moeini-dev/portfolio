@@ -96,7 +96,95 @@ body {
     }
 }
 
-@media screen and (max-width: 48em) {
+
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 8vw 0 8vw;
+    /* border: 1px solid aqua ; */
+}
+
+.skill-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    height: 100vh;
+    overflow: hidden;
+    /* border: 2px solid yellow; */
+}
+
+.skill-wrapper.right {
+    flex-direction: row-reverse;
+    /* border: 2px solid violet; */
+}
+
+.skill-wrapper > .skill-pic {
+    width: 20vw;
+    /* width: auto; */
+    /* border: 2px solid red; */
+}
+
+#michel {
+    mix-blend-mode: lighten;
+}
+
+#polished_obj {
+    transform: rotate(-150deg);
+    width: 18vw;
+}
+
+.skill-context {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    right: 55%;
+    width: 42%;
+    /* width: fit-content; */
+    transform: translateX(60%);
+    /* border: 3px solid greenyellow; */
+}
+
+.skill-context.right {
+    right: revert;
+    transform: revert;
+    left: 45%;
+    transform: translateX(-40%);
+}
+
+.skill-title {
+    font-family: 'Noto Sans', sans-serif;
+    /* font-size: 2.5rem; */
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.skill-text {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: lightgray;
+    line-height: 2.7rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.skill-text.two-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+
+@media screen and (max-width: 50em) {
     .hero-context {
         margin: 15vh 8vw 2vw 8vw;
         flex-wrap: wrap;
@@ -120,94 +208,54 @@ body {
     .hero-right > img{
         width: 27vh;
     }
+
+    .skill-wrapper {
+        flex-direction: column;
+        /* justify-content: space-between; */
+        justify-content: center;
+        gap: 10vh;
+    }
+
+    .skill-wrapper.right {
+        flex-direction: column;
+        /* border: 2px solid violet; */
+    }
+
+    .skill-wrapper > .skill-pic {
+        min-width: 150px;
+        /* border: 2px solid red; */
+    }
+
+    #polished_obj {
+        width: 100px;
+    }
+
+    .skill-context {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        /* border: 3px solid green; */
+    }
+
+    .skill-context.right {
+        all: revert;
+        /* border: 3px solid green; */
+    }
+
+    .skill-title {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .skill-text {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        color: white;
+        line-height: 2rem;
+    }
 }
 
-.skills-container {
-    height: 2000px;
-    margin: 20vh 8vw 0 8vw;
-    /* border: 1px solid aqua ; */
-}
-
-.skill-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 90vh;
-    margin: 10vh 0;
-    overflow: hidden;
-    border: 2px solid yellow;
-}
-
-.skill-wrapper.right {
-    flex-direction: row-reverse;
-    overflow: hidden;
-    border: 2px solid violet;
-}
-
-.skill-wrapper > .skill-pic {
-    width: 20%;
-    border: 2px solid red;
-
-}
-
-#michel {
-    mix-blend-mode: lighten;
-}
-
-#polished_obj {
-    transform: rotate(-150deg);
-    width: 20%;
-}
-
-.skill-context {
-    display: flex;
-    flex-direction: column;
-    position:relative;
-    right: 55%;
-    width: 42%;
-    /* width: fit-content; */
-    transform: translateX(60%);
-    /* border: 3px solid green; */
-}
-
-.skill-context.right {
-    right: revert;
-    transform: revert;
-    left: 45%;
-    transform: translateX(-40%);
-}
-
-.skill-title {
-    font-family: 'Noto Sans', sans-serif;
-    /* font-size: 2.5rem; */
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: white;
-}
-
-
-.skill-text {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin-top: 2rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 100;
-    color: lightgray;
-    line-height: 2.7rem;
-}
-
-ul {
-    list-style: none;
-}
-
-.skill-text.two-columns {
-    display: flex;
-    flex-direction: row;
-
-    gap: 3rem;
-}
 
 /* 
 font-family: 'Ubuntu', sans-serif;

@@ -43,7 +43,7 @@ function Home () {
             </div>
           </div>
           <div id="skill-backend" className="skill-wrapper right">
-            <img src={twisted_shape} alt="a silver-golden statue of Michelangelo " className="skill-pic" id="twisted"/>
+            <img src={twisted_shape} alt="a twisted shape" className="skill-pic" id="twisted"/>
             <div className="skill-context right">
               <div className="skill-title">Back-End<br/>Development</div>
               <div className="skill-text two-columns">
