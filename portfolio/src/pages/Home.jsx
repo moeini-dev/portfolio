@@ -6,6 +6,12 @@ import hologram_hand from './../assets/png/simon-lee-ynmPY1MLwMs-unsplash-remove
 import polished_obj from './../assets/png/rohit-choudhari-S6KP_UX2O9s-unsplash-removebg-preview.webp' 
 
 function Home () {
+
+  function scrollToSkills () {
+    const windowHeight = window.innerHeight;
+    window.scrollBy(0, ((windowHeight) + windowHeight * 0.1 - window.scrollY) );   // 0.1 = 10vh margin of the container
+  }
+
   return (
     <>
 			<div className="hero-container">
@@ -19,7 +25,7 @@ function Home () {
             <img src={astronaut} alt="a floating astronaut" />
           </div>
         </div>
-        <div className="hero-arrow">
+        <div className="hero-arrow" onClick={scrollToSkills}>
           <p className="arrow-text">My skills</p>
           <svg width="16px" height="16px" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)" fill="#ffffff">
@@ -31,61 +37,70 @@ function Home () {
         </div>
       </div>
       <section className="skills-container">
-          <div id="skill-software" className="skill-wrapper">
-            <img src={statue} alt="a silver-golden statue of Michelangelo " className="skill-pic" id="michel"/>
-            <div className="skill-context">
-              <div className="skill-title">Software<br/>Engineering</div>
-              <ul className="skill-text">
-                <li>Users & System Requirements Analysis</li>
-                <li>Database Architecture Design</li>
-                <li>Scrum</li>
+        <div id="skill-software" className="skill-wrapper">
+          <img src={statue} alt="a silver-golden statue of Michelangelo " className="skill-pic" id="michel"/>
+          <div className="skill-context">
+            <div className="skill-title">Software<br/>Engineering</div>
+            <ul className="skill-text">
+              <li>Users & System Requirements Analysis</li>
+              <li>Database Architecture Design</li>
+              <li>Scrum</li>
+            </ul>
+          </div>
+        </div>
+        <div id="skill-backend" className="skill-wrapper right">
+          <img src={twisted_shape} alt="a twisted shape" className="skill-pic" id="twisted"/>
+          <div className="skill-context right">
+            <div className="skill-title">Back-End<br/>Development</div>
+            <div className="skill-text two-columns">
+              <ul className="skill-text-left">
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Sequelize ORM</li>
+                <li>MySQL</li>
+              </ul>
+              <ul className="skill-text-right">
+                <li>RESTful API</li>
+                <li>Postman</li>
+                <li>Docker</li>
+                <li>Git/GitHub</li>
               </ul>
             </div>
           </div>
-          <div id="skill-backend" className="skill-wrapper right">
-            <img src={twisted_shape} alt="a twisted shape" className="skill-pic" id="twisted"/>
-            <div className="skill-context right">
-              <div className="skill-title">Back-End<br/>Development</div>
-              <div className="skill-text two-columns">
-                <ul className="skill-text-left">
-                  <li>Python</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>Sequelize ORM</li>
-                  <li>MySQL</li>
-                </ul>
-                <ul className="skill-text-right">
-                  <li>RESTful API</li>
-                  <li>Postman</li>
-                  <li>Docker</li>
-                  <li>Git/GitHub</li>
-                </ul>
-              </div>
-            </div>
+        </div>
+        <div id="skill-frontend" className="skill-wrapper">
+          <img src={hologram_hand} alt="a dripping holographic hand with a metal and color paint material" className="skill-pic" id="dripping-hand"/>
+          <div className="skill-context">
+            <div className="skill-title">Front-End<br/>Develpment</div>
+            <ul className="skill-text">
+              <li>HTML - CSS</li>
+              <li></li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+            </ul>
           </div>
-          <div id="skill-frontend" className="skill-wrapper">
-            <img src={hologram_hand} alt="a dripping holographic hand with a metal and color paint material" className="skill-pic" id="dripping-hand"/>
-            <div className="skill-context">
-              <div className="skill-title">Front-End<br/>Develpment</div>
-              <ul className="skill-text">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-              </ul>
-            </div>
+        </div>
+        <div id="skill-design" className="skill-wrapper right">
+          <img src={polished_obj} alt="Two smooth polished shapes in front of each other" className="skill-pic" id="polished_obj"/>
+          <div className="skill-context right">
+            <div className="skill-title">Design</div>
+            <ul className="skill-text">
+              <li>Web & Mobile UI</li>
+              <li>Figma</li>
+              <li>InVision</li>
+              <li>Photoshop</li>
+            </ul>
           </div>
-          <div id="skill-design" className="skill-wrapper right">
-            <img src={polished_obj} alt="Two smooth polished shapes in front of each other" className="skill-pic" id="polished_obj"/>
-            <div className="skill-context right">
-              <div className="skill-title">Design</div>
-              <ul className="skill-text">
-                <li>Web And Mobile UI</li>
-                <li>Figma</li>
-                <li>InVision</li>
-                <li>Photoshop</li>
-              </ul>
-            </div>
+        </div>
+      </section>
+      <section class="about-me-wrapper">
+          <h2>About Me</h2>
+          <div className="about-me-text">
+            I'm a 23 year old developer with a Bachelor's Degree of Computer Engineering.<br/>
+            I consider myself more as a Back-end Developer than a Fullstack.<br/>
+            Humanity, Honesty, Justice, and Privacy are the most important things I value.<br/>
+            OH, And as a matter of fact, I prefer Tab over Spaces !<br/>
           </div>
       </section>
 		</>

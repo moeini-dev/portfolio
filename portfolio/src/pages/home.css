@@ -96,12 +96,10 @@ body {
     }
 }
 
-
-
 .skills-container {
     display: flex;
     flex-direction: column;
-    margin: 20vh 8vw 0 8vw;
+    margin: 10vh 8vw;
     /* border: 1px solid aqua ; */
 }
 
@@ -111,7 +109,7 @@ body {
     justify-content: space-between;
     gap: 5rem;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border: 2px solid yellow; */
 }
 
@@ -132,14 +130,14 @@ body {
 
 #polished_obj {
     transform: rotate(-150deg);
-    width: 18vw;
+    width: 15vw;
 }
 
 .skill-context {
     display: flex;
     flex-direction: column;
     position:relative;
-    right: 55%;
+    right: 50%;
     width: 42%;
     /* width: fit-content; */
     transform: translateX(60%);
@@ -149,7 +147,7 @@ body {
 .skill-context.right {
     right: revert;
     transform: revert;
-    left: 45%;
+    left: 50%;
     transform: translateX(-40%);
 }
 
@@ -167,10 +165,10 @@ body {
     list-style: none;
     margin-top: 2rem;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 100;
-    color: lightgray;
-    line-height: 2.7rem;
+    color: white;
+    line-height: 2.5rem;
 }
 
 ul {
@@ -182,6 +180,37 @@ ul {
     flex-direction: row;
     gap: 3rem;
 }
+
+
+.about-me-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10vh 8vw 0 8vw; 
+    display: flex;
+    align-items: center;
+}
+
+.about-me-wrapper > h2 {
+    flex-basis: 27vw;
+    flex-shrink: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    /* border: 2px solid tomato; */
+}
+
+.about-me-text {
+    flex-shrink: 1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+    line-height: 2.5rem; 
+    width: fit-content;
+    /* border: 3px solid orangered; */
+}
+
 
 
 @media screen and (max-width: 50em) {
@@ -211,9 +240,8 @@ ul {
 
     .skill-wrapper {
         flex-direction: column;
-        /* justify-content: space-between; */
         justify-content: center;
-        gap: 10vh;
+        height: 100vh;
     }
 
     .skill-wrapper.right {
@@ -251,6 +279,34 @@ ul {
     .skill-text {
         margin-top: 1rem;
         font-size: 1.1rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+    @keyframes pictureAnimationMobile {
+        from {
+            opacity: 0;
+            transform: translateY(-20%);
+        }
+    }
+
+    .about-me-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem
+    }
+
+    .about-me-wrapper > h2 {
+        flex-basis: revert;
+        width: fit-content;
+        font-size: 2rem;
+    }
+
+    .about-me-text {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
         color: white;
         line-height: 2rem;
     }
