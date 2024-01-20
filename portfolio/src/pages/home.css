@@ -188,6 +188,7 @@ ul {
     margin: 10vh 8vw 0 8vw; 
     display: flex;
     align-items: center;
+    /* border: 1px solid gold; */
 }
 
 .about-me-wrapper > h2 {
@@ -198,6 +199,10 @@ ul {
     font-weight: 500;
     color: white;
     /* border: 2px solid tomato; */
+}
+
+.about-me-wrapper > h2 span {
+    color: var(--emphesis-color);
 }
 
 .about-me-text {
@@ -211,6 +216,61 @@ ul {
     /* border: 3px solid orangered; */
 }
 
+.about-me-wrapper.contact > h2 {
+    align-self: flex-start;
+}
+
+.social-media-wrapper {
+    display: flex;
+    align-self: flex-start;
+    gap: 2vw;
+}
+
+.social-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65px;
+    cursor: pointer;
+    /* border: 1px solid white; */
+}
+
+.social-app > svg .fill-preview {
+    transition: all 0.5s ease;
+}
+
+.social-app > svg .stroke-preview {
+    transition: all 0.5s ease;
+}
+
+.social-app svg:hover .fill-preview {
+    width: 50px;
+    height: auto;
+    fill: var(--emphesis-color);
+    transition: all 0.5s ease;
+}
+
+.social-app svg:hover .stroke-preview {
+    width: 50px;
+    height: auto;
+    stroke: var(--emphesis-color);
+    transition: all 0.5s ease;
+}
+
+/*This statement changes the .app-name that is next to svg while hovering over it*/
+.social-app > svg:hover + .app-name {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.app-name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    opacity: 0;
+    color: var(--emphesis-color);
+    margin-top: 0.5rem;
+    transition: all 0.5s linear;
+}
 
 
 @media screen and (max-width: 50em) {
