@@ -240,6 +240,14 @@ a {
     /* border: 1px solid white; */
 }
 
+.social-app > svg {
+    transition: all 0.5s ease-out;
+}
+
+.social-app > svg:hover {
+    transform: translateY(-10px);
+}
+
 .social-app > svg .fill-preview {
     transition: all 0.25s ease;
 }
