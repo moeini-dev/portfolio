@@ -63,6 +63,7 @@ function Home () {
               <ul className="skill-text-right">
                 <li>RESTful API</li>
                 <li>Postman</li>
+                <li>JWT</li>
                 <li>Docker</li>
                 <li>Git/GitHub</li>
               </ul>
