@@ -107,7 +107,7 @@ function Home () {
       <section class="about-me-wrapper contact">
           <h2>Let's <span>Contact</span></h2>
           <div className="social-media-wrapper">
-            <a href="#">
+            <a target="_blank"href="https://github.com/moeini-dev">
               <div className="social-app 1">
                 <svg width="50px" height="50px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -117,13 +117,13 @@ function Home () {
                 <div className="app-name">Github</div>
               </div>
             </a>
-            <a href="#">
+            <a target="_blank"href="https://www.linkedin.com/in/ali-moeini-a819632b0">
               <div className="social-app 2" >
               <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" viewBox="0 0 24 24"><path class="stroke-preview" stroke="#ffffff" stroke-width="1" fill="none" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
                 <div className="app-name">linkedin</div>
               </div>
             </a>
-            <a href="#">
+            <a target="_blank"href="https://www.instagram.com/unrealworld_official/">
             <div className="social-app 3">
               <svg class="fill-preview" width="50px" height="50px" viewBox="0 0 24 24" fill="none" stroke="#16213E" stroke-width="0.9" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier"/>
@@ -133,7 +133,7 @@ function Home () {
               <div className="app-name">Instagram</div>
             </div>
             </a>
-            <a href="#">
+            <a target="_blank"href="https://t.me/ali_m_pro">
               <div className="social-app 4" id="telegram">
                 <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="SVGRepo_bgCarrier" stroke-width="1"/>
