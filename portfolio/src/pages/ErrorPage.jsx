@@ -10,7 +10,7 @@ function ErrorPage() {
 		<div className="error-page-container">
 			<div className="error-page">
 				<h1 className="error-code">404</h1>
-				<p className="error-message">Sorry, but something is going wrong...</p>
+				<p className="error-message">OH, It seems you're lost!</p>
 			</div>
 		</div>
 		</>

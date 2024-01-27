@@ -1,8 +1,7 @@
 .error-page-container {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
-    align-items: center;
 }
 
 .error-page {
@@ -10,9 +9,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
 }
 
-/* .error-message {
-    transform: scaleY(1.4);
-} */
+.error-code {
+    font-family: 'Varela round', sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: white;
+}
+
+.error-message {
+    font-family: 'Varela round', sans-serif;
+    color: white;
+    margin-top: 1rem;
+}
