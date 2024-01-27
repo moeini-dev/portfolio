@@ -1,8 +1,11 @@
-user-agent: googlebot
-allow: /
+User-agent: googlebot
+Allow: /
 
-user-agent: bingbot
-allow: /
+User-agent: bingbot
+Allow: /
 
-user-agent: *
-disallow: /
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: *
+Disallow: /
