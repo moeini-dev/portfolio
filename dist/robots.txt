@@ -1,8 +1,0 @@
-user-agent: googlebot
-allow: /
-
-user-agent: bingbot
-allow: /
-
-user-agent: *
-disallow: /
