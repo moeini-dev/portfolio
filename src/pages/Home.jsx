@@ -98,7 +98,7 @@ function Home () {
       <section class="about-me-wrapper">
           <h2>About Me</h2>
           <div className="about-me-text">
-            I'm a 23 year old developer with a Bachelor's Degree of Computer Engineering.<br/>
+            I'm young developer with a Bachelor's Degree of Computer Engineering.<br/>
             I consider myself more as a Back-end Developer than a Fullstack.<br/>
             Humanity, Honesty, Justice, and Privacy are the most important things I value.<br/>
             OH, And as a matter of fact, I prefer Tab over Spaces !<br/>
