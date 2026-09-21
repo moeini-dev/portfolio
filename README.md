@@ -1,5 +1,5 @@
 # My Minimal PWA Portfolio Website
-![a cropped screenshot of my minimal pwa portfolio website developed using react](./public/portfolio.png)
+![a cropped screenshot of my minimal pwa portfolio website developed using react](./portfolio.png)
 
 This is my portfolio project that I first designed and developed in 2024.
 
