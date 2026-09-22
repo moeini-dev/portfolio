@@ -1,6 +1,6 @@
 import './home.css';
 import astronaut from './../assets/png/image-from-rawpixel-id-12158813-png.webp';
-import statue from './../assets/png/alex-shuper-zoiROwz_2IU-unsplash.webp';
+import statue from './../assets/png/alex-shuper-zoiROwz_2IU-unsplash.png';
 import twisted_shape from './../assets/png/twisted_shape.png';
 import hologram_hand from './../assets/png/simon-lee-ynmPY1MLwMs-unsplash-removebg-preview.webp'
 import polished_obj from './../assets/png/rohit-choudhari-S6KP_UX2O9s-unsplash-removebg-preview.webp' 
