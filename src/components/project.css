@@ -1,0 +1,88 @@
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width:400px;
+    min-height: 250px;
+    max-height: fit-content;
+    /* aspect-ratio: 16/10; */
+    /* border: 2px solid cadetblue; */
+    border-radius: 10px;
+    background-size: cover;
+    overflow: hidden;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(5px 7px 5px rgba(0, 7, 36, 0.5));
+}
+
+.project-card-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+    object-position: center 10%;
+}
+
+.project-card-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(0deg,rgb(1, 0, 24) 0%, rgba(0, 212, 148, 0.123) 65%, rgba(0, 0, 0, 0.3) 100%); */
+    background: linear-gradient(0deg,rgba(3, 0, 43, 0.85) 10%, rgba(0, 212, 148, 0.20) 65%, rgba(0, 0, 0, 0.5) 100%);
+    opacity: 90%;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+
+.project-card:hover .project-card-overlay {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.project-card-info {
+    direction: flex;
+    align-self: flex-start;
+    margin: 40% 0 5% 5%;
+    /* border: 2px solid tomato; */
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    transition: color 0.75s ease;
+    z-index: 1;
+}
+
+.project-card-title {
+    font-size:1.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.project-card-description {
+    font-size:0.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+.project-card-stack {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 1rem;
+    gap: 0.7rem;
+}
+
+.stack-notch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 65%;
+    background-color: darkgrey;
+    border-radius: 0 0 10px 10px;
+}
