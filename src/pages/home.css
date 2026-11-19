@@ -213,9 +213,13 @@ a {
     font-size: 1.2rem;
     font-weight: 100;
     color: white;
-    line-height: 2.5rem; 
     width: fit-content;
     /* border: 3px solid orangered; */
+}
+
+.about-me-text p {
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
 }
 
 .about-me-text#email {
@@ -224,6 +228,27 @@ a {
 
 .about-me-wrapper.contact > h2 {
     align-self: flex-start;
+}
+
+.about-me-wrapper.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: 2px solid tomato; */
+}
+
+.about-me-wrapper.projects > h2 {
+    flex-basis: 0;
+}
+
+.projects-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+    /* border: 2px solid chartreuse; */
 }
 
 .social-media-wrapper {
@@ -390,6 +415,17 @@ a {
         font-size: 1rem;
         font-weight: 300;
         color: white;
-        line-height: 2rem;
+    }
+
+    .about-me-text p {
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
 }
